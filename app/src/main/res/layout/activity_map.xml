@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context="com.mac.th.MapActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBgColor"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/back_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="展馆位置"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Rl"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/map_Iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="       延安市科技馆新馆位于枣园路中段，与枣园革命旧址和中国延安干部学院相毗邻，场馆外观设计上结合陕北窑洞和仿唐建筑特色，与枣园路风情文化街建筑风格相融合。场馆占地面积15亩、建筑面积约18000㎡,地上四层，地下一层。
+　　
+       延安科技馆展览教育面积9000㎡，设有1个常设展厅、1个主题展厅、1个军事科普展区和1个特效影院。其中常设展厅面积6286㎡，展示主题为“探索·科技·未来”，设序厅、奇妙的世界、探索与实践、走向未来和尾厅5个科技展厅、1个儿童乐园和3个科学工作室。
+　　
+       延安科技馆以展览教育为主要手段，通过科学性、知识性、趣味性相结合的展览内容和参与互动的形式，反映科学原理及技术应用，注重普及科学知识，注重培养观众的科学思想、科学方法和科学精神。在开展展览教育的同时，还组织各类实践和培训、学术交流、科技咨询等活动，让观众通过亲身参与，加深对科学的认识和理解，在寓教于乐中提高自身科学素质。"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
